@@ -23,7 +23,6 @@ function initCart() {
             <div class="row col-6 col-xl-9">
               <div class="col-xl-4">
                 <h6 class="text-black mb-0 mb-xl-1">${Ao[id].name}</h6>
-                <h6 class="text-muted mb-0 d-none d-xl-block">${Ao[id].author}</h6>
               </div>
               <div class="col-xl-4 my-2 d-flex align-items-center">
                 <input type="text" class="d-none" value="${id}" />
