@@ -11,7 +11,7 @@ form.addEventListener("submit", () => {
 });
 
 function initOrderSummary() {
-  cart.forEach(item => {
+  cart.forEach((item) => {
     if (item != null) {
       const id = item.id;
       let newBook = document.createElement("li");
@@ -20,25 +20,29 @@ function initOrderSummary() {
       newBook.innerHTML = `
         <div class="d-flex justify-content-between lh-sm">
           <div>
-            <h6 class="my-0 pe-5">${books[id].name}</h6>
+            <h6 class="my-0 pe-5">${Ao[id].name}</h6>
             <small class="text-muted">Quantity: ${item.amount}</small>
           </div>
-          <span class="text-muted">${formatPrice(books[id].price * item.amount)}.000₫</span>
+          <span class="text-muted">${formatPrice(
+            Ao[id].price * item.amount
+          )}.000₫</span>
         </div>
-      `
+      `;
       summaryList.insertBefore(newBook, document.getElementById("divider"));
     }
   });
   const count = cart.reduce((accumulator, currentValue) => {
     if (currentValue != null) {
-      return accumulator + books[currentValue.id].price * currentValue.amount
+      return accumulator + Ao[currentValue.id].price * currentValue.amount;
     }
     return accumulator;
-  }, 0
-  );
+  }, 0);
   totalPrice.innerText = `${formatPrice(count + SHIPPING_COST)}.000₫`;
 
-  productCount.innerText = cart.reduce((accumulator, currentValue) => accumulator + (currentValue == null ? 0 : 1), 0,);
+  productCount.innerText = cart.reduce(
+    (accumulator, currentValue) => accumulator + (currentValue == null ? 0 : 1),
+    0
+  );
 }
 
 initOrderSummary();
