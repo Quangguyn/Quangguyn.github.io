@@ -1,112 +1,92 @@
-let books = [
+let Ao = [
   {
-    id:0,
-    name: "Tư duy mở",
-    url: "Sách kỹ năng/Tu_duy_mo",
-    author: "Nguyễn Anh Dũng",
-    description:
-      `
+    id: 0,
+    name: "Áo phông oversized Garfield Alway Good",
+    url: "Aophong/goodfront",
+    description: `
     `,
-    rating: 4,
-    price: 280
+    rating: 5,
+    price: 499,
   },
   {
     id: 1,
-    name: "Atomic Habits - Thay đổi tí hon",
-    url: "Sách kỹ năng/Atomic_Habits",
-    author: "Nguyễn Nhật Ánh",
-    description:
-      `
+    name: "Áo phông Garfield Undertall",
+    url: "Aophong/undertallfront",
+    description: `
     `,
-    rating: 4,
-    price: 80
+    rating: 5,
+    price: 499,
   },
   {
     id: 2,
-    name: "Flow - Dòng chảy",
-    url: "Sách kỹ năng/Flow_Dong_Chay",
-    author: "Kim Lân",
-    description:
-      `
+    name: "Áo phông Garfield Sleep",
+    url: "Aophong/sleepfront",
+    description: `
     `,
-    rating: 4,
-    price: 60
+    rating: 5,
+    price: 499,
   },
   {
     id: 3,
-    name: "Tư duy ngược",
-    url: "Sách kỹ năng/Tu_duy_nguoc",
-    author: "",
-    description:
-      `
+    name: "Áo sơ mi nam THÊU TÚI ESSENTIAL",
+    url: "Somi/smbefront",
+    description: `
     `,
-    rating: 4,
-    price: 100
+    rating: 5,
+    price: 499,
   },
   {
     id: 4,
-    name: "Yêu những điều không hoàn hảo",
-    url: "Sách kỹ năng/Yeu_nhung_dieu_khong_hoan_hao",
-    author: "",
-    description:
-      `
+    name: "Áo sơ mi cộc tay Regular túi ngực",
+    url: "Somi/smhongfront",
+    description: `
     `,
     rating: 5,
-    price: 200
+    price: 399,
   },
   {
     id: 5,
-    name: "CR7 - Hành trình lên đỉnh thế giới",
-    url: "eclipse",
-    author: "Meyer",
-    description:
-      `
+    name: "Áo sơ mi dài oversized dài kẻ phối trắng",
+    url: "Somi/smxanhfront",
+    description: `
     `,
-    rating: 4,
-    price: 300
+    rating: 5,
+    price: 499,
   },
   {
     id: 6,
-    name: "Cây cam ngọt của tôi",
-    url: "Sách tâm lý học/cay_cam_ngot_cua_toi",
-    author: "William",
-    description:
-      `
+    name: "Áo khoác Cardigan AUTUMNAL KNIT - Moon grey",
+    url: "Aokhoac/cardiganfront",
+    description: `
     `,
     rating: 5,
-    price: 100
+    price: 769,
   },
   {
     id: 7,
-    name: "Tâm lý học về tiền",
-    url: "Sách tâm lý học/Tam_ly_hoc_ve_tien",
-    author: "Mark Twain",
-    description:
-      `
+    name: "Áo khoác WOODLAND NON - COLLAR DENIM",
+    url: "Aokhoac/denimfront",
+    description: `
     `,
-    rating: 3,
-    price: 120
+    rating: 5,
+    price: 1.399,
   },
   {
     id: 8,
-    name: "Cho tôi xin một vé tuổi thơ",
-    url: "Sách tâm lý học/cho_toi_xin_mot_ve_tuoi_tho",
-    author: "Nguyễn Ngọc Ánh",
-    description:
-      `
+    name: "Áo khoác TIFF DRACO LEATHER",
+    url: "Aokhoac/leatherjacketfront",
+    description: `
     `,
-    rating: 4,
-    price: 50
+    rating: 5,
+    price: 1.263,
   },
   {
     id: 9,
-    name: "Dám bị ghét",
-    url: "Sách tâm lý học/Dam_bi_ghet",
-    author: "Antoine",
-    description:
-      `
+    name: "Quần short jeans nam ESSENTIAL",
+    url: "Short/xanhfront",
+    description: `
     `,
     rating: 5,
-    price: 100
-  }
+    price: 299,
+  },
 ];
