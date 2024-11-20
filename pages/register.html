@@ -71,18 +71,23 @@
                 />
               </a>
     
-              <!-- Thanh tìm kiếm -->
-              <form class="d-flex w-50 mx-4">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Tìm kiếm sản phẩm..."
-                  aria-label="Search"
-                />
-                <button class="btn btn-outline-primary" type="submit">
-                  <i class="bi bi-search"></i>
-                </button>
-              </form>
+             <!-- Search bar -->
+          <div
+            class="container-md d-flex w-50 mt-2 flex-row-reverse justify-content-center"
+          >
+            <input
+              type="text"
+              id="searchInput"
+              style="height: 37.64px"
+              class="form-control mt-1"
+              placeholder="Tìm kiếm sản phẩm..."
+            />
+            <i
+              id="searchIcon"
+              class="bi bi-search mt-1 ms-0 me-1 bi-cart-fill btn btn-dark"
+            ></i>
+            <div class="me-2"></div>
+          </div>
     
               <!-- Đăng nhập + Giỏ hàng -->
               <div class="d-flex align-items-center gap-3">
