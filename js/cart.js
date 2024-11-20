@@ -17,13 +17,13 @@ function initCart() {
           <div class="row mb-4 d-flex justify-content-between align-items-center pb-4 border-bottom">
             <div class="col-4 col-xl-2 px-0 px-sm-2">
               <img
-                src="../assets/images/${books[id].url}.jpg"
+                src="../assets/images/Ao/${Ao[id].url}.jpg"
                 class="img-fluid rounded-3" alt="clothing">
             </div>
             <div class="row col-6 col-xl-9">
               <div class="col-xl-4">
-                <h6 class="text-black mb-0 mb-xl-1">${books[id].name}</h6>
-                <h6 class="text-muted mb-0 d-none d-xl-block">${books[id].author}</h6>
+                <h6 class="text-black mb-0 mb-xl-1">${Ao[id].name}</h6>
+                <h6 class="text-muted mb-0 d-none d-xl-block">${Ao[id].author}</h6>
               </div>
               <div class="col-xl-4 my-2 d-flex align-items-center">
                 <input type="text" class="d-none" value="${id}" />
@@ -38,7 +38,7 @@ function initCart() {
                 </div>
               </div>
               <div class="col-xl-4 d-flex align-items-center">
-                <h6 class="mb-0">${books[id].price}.000₫</h6>
+                <h6 class="mb-0">${Ao[id].price}.000₫</h6>
               </div>
             </div>
             
@@ -63,7 +63,7 @@ const totalPrice = document.getElementById("totalPrice");
 function updateTotalPrice() {
   const count = cart.reduce((accumulator, currentValue) => {
     if (currentValue != null) {
-      return accumulator + books[currentValue.id].price * currentValue.amount;
+      return accumulator + Ao[currentValue.id].price * currentValue.amount;
     }
     return accumulator;
   }, 0);
