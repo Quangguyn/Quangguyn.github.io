@@ -1,0 +1,183 @@
+/* Container chính */
+.product-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 50px auto;
+  gap: 20px;
+}
+
+/* Cột ảnh phụ */
+.thumbnail-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.thumbnail-images img {
+  width: 100%;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  height: 200px;
+  width: auto;
+}
+
+.thumbnail-images img:hover {
+  border-color: #800020;
+}
+
+/* Cột ảnh chính */
+.main-image {
+  flex: 2;
+  text-align: center;
+}
+
+.main-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Cột thông tin sản phẩm */
+.product-details {
+  flex: 3;
+}
+
+.product-details {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.product-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.rating-and-review {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.rating-and-review .stars {
+  color: #f4b400;
+  margin-right: 5px;
+}
+
+.sku {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 15px 0;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.discount {
+  background-color: #800020; /* Màu burgundy */
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sale-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d74232;
+}
+
+.original-price {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.size-selector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.size-btn {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.size-btn.selected {
+  background-color: #800020;
+  color: #fff;
+  border: 1px solid #800020;
+}
+
+.size-btn:hover {
+  border-color: #800020;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 5px; /* Khoảng cách giữa các nút */
+}
+
+.quantity-btn {
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 35px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.quantity-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.quantity-input {
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-to-cart button {
+  background-color: #800020;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  height: 50px;
+  width: 100%;
+}
+
+.quantity-btn {
+  cursor: pointer;
+}
+.bi-star-fill {
+  height: 8px;
+  margin-right: 2px;
+}
