@@ -69,7 +69,7 @@ let Ao = [
     description: `
     `,
     rating: 5,
-    price: 1.399,
+    price: 1399,
   },
   {
     id: 8,
@@ -78,15 +78,7 @@ let Ao = [
     description: `
     `,
     rating: 5,
-    price: 1.263,
+    price: 1263,
   },
-  {
-    id: 9,
-    name: "Quần short jeans nam ESSENTIAL",
-    url: "Short/xanhfront",
-    description: `
-    `,
-    rating: 5,
-    price: 299,
-  },
+
 ];
