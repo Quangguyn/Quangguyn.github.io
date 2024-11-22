@@ -3,10 +3,6 @@ body {
   /* overflow-x: hidden; */
 }
 
-.header-font {
-  font-family: "Prata", Georgia, serif;
-}
-
 a {
   text-decoration: none;
   color: inherit;
