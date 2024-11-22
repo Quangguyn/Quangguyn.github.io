@@ -1,0 +1,55 @@
+/* Tùy chỉnh lại biểu tượng và kiểu font */
+.fw-bold {
+  font-weight: bold;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  max-width: 300px; /* Giới hạn chiều rộng dropdown */
+}
+
+.dropdown-item {
+  font-size: 14px; /* Giảm kích thước chữ */
+}
+
+.me-2 {
+  margin-right: 0.5rem; /* Khoảng cách giữa icon và text */
+}
+
+/* Các phần tử nằm ngang, flexbox từ Bootstrap */
+.d-flex {
+  display: flex;
+}
+.justify-content-start {
+  justify-content: flex-start;
+}
+.align-items-center {
+  align-items: center;
+}
+.gap-4 {
+  gap: 1.5rem; /* Khoảng cách giữa các phần tử */
+}
+.flex-wrap {
+  flex-wrap: wrap; /* Đảm bảo phần tử sẽ xuống dòng khi không đủ không gian */
+}
+.notification {
+  display: flex;
+  justify-content: center !important;
+}
+/* Ẩn dropdown mặc định */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Hiển thị dropdown khi hover vào button */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.pagination .page-link {
+  background-color: black;
+  color: white;
+}
