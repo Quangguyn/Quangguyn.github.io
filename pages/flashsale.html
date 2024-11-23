@@ -20,6 +20,7 @@
 
     <!-- Custom css -->
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style_ao.css" />
 
      <!-- Font-->
     <link
@@ -213,7 +214,86 @@
           </p>
         </h1>
       </div>
+<!--Lọc sản phẩm-->
+      <div class="container">
+        <div
+          class="d-flex justify-content-start align-items-center gap-4 flex-wrap"
+        >
+          <!-- Bộ Lọc -->
+          <div class="d-flex align-items-center">
+            <i class="fas fa-filter text-danger me-2"
+              ><!-- Font Awesome Icons --><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-funnel-fill"
+                viewBox="0 0 16 16"
+                style="color: rgb(56, 55, 55)"
+              >
+                <path
+                  d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5z"
+                />
+              </svg>
+            </i>
+            <span class="fw-bold">BỘ LỌC</span>
+          </div>
 
+          <!-- Dropdown Giá Sản Phẩm -->
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              type="button"
+              id="priceFilter"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              GIÁ SẢN PHẨM
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="priceFilter">
+              <li>
+                <label class="dropdown-item">
+                  <input
+                    type="checkbox"
+                    class="price-filter"
+                    value="under-150"
+                  />
+                  Dưới 150,000₫
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="price-filter" value="150-250" />
+                  150,000₫ - 250,000₫
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="price-filter" value="250-350" />
+                  250,000₫ - 350,000₫
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input type="checkbox" class="price-filter" value="350-500" />
+                  350,000₫ - 500,000₫
+                </label>
+              </li>
+              <li>
+                <label class="dropdown-item">
+                  <input
+                    type="checkbox"
+                    class="price-filter"
+                    value="above-500"
+                  />
+                  Trên 500,000₫
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
       <!-- Fixed cart -->
       <div
         id="fixedCart"
