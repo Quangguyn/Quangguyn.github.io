@@ -1,7 +1,6 @@
 let currentPage = 1;
-const itemsPerPage = 8; // Mỗi trang sẽ hiển thị 8 sản phẩm
-let filteredProducts = Ao; // Mảng lưu trữ các sản phẩm sau khi lọc (ban đầu là tất cả sản phẩm)
-
+const itemsPerPage = 8; 
+let filteredProducts = Ao; 
 // Hàm hiển thị sản phẩm
 function displayProducts(products) {
   const productContainer = document.getElementById("ourshelf");
@@ -29,7 +28,7 @@ function displayProducts(products) {
     const productCard = `
       <div class="mb-5 col">
         <div class="card d-block hvr-glow">
-          <a href="${product.url}">
+          <a href="../pages/chitietsp.html">
             <div class="image-hover-container">
               <img src="../assets/images/Ao/${product.url}.jpg" alt="${
       product.name
