@@ -45,10 +45,16 @@ function initOrderSummary() {
 
   // Thêm mục hiển thị phí vận chuyển
   let shippingItem = document.createElement("li");
-  shippingItem.classList.add("list-group-item", "d-flex", "justify-content-between");
+  shippingItem.classList.add(
+    "list-group-item",
+    "d-flex",
+    "justify-content-between"
+  );
   shippingItem.innerHTML = `
     <span>Shipping Cost</span>
-    <strong>${shippingCost === 0 ? "Free" : `${formatPrice(shippingCost)}.000₫`}</strong>
+    <strong>${
+      shippingCost === 0 ? "Free" : `${formatPrice(shippingCost)}.000₫`
+    }</strong>
   `;
   summaryList.appendChild(shippingItem);
 
