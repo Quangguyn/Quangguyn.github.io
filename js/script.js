@@ -87,14 +87,31 @@ function formatPrice(price) {
 // updateLoginButton();
 updateCart();
 
-const addBtnList = document.querySelectorAll(".add-button");
+document.addEventListener("DOMContentLoaded", () => {
+  const productContainer = document.getElementById("ourshelf");
 
-addBtnList.forEach((button) => {
-  button.onclick = () => {
-    const id = parseInt(button.nextElementSibling.value);
-    handleAddBookEvent(id);
-    document.getElementById(
-      "modalBody"
-    ).firstElementChild.innerText = `"${Ao[0].name}"`;
-  };
+  // Lắng nghe sự kiện click trên container chứa các sản phẩm
+  productContainer.addEventListener("click", (event) => {
+    // Kiểm tra xem phần tử được click có phải là nút "Thêm vào giỏ" không
+    const button = event.target.closest(".add-button");
+    if (!button) return;
+
+    // Lấy ID sản phẩm từ thuộc tính data-id của nút
+    const id = parseInt(button.getAttribute("data-id"));
+    const product = filteredProducts.find((item) => item.id === id);
+
+    if (product) {
+      // Gọi hàm xử lý thêm sản phẩm vào giỏ
+      handleAddBookEvent(id);
+
+      // Cập nhật nội dung trong modal
+      document.getElementById("modalBody").firstElementChild.innerText = `"${product.name}" đã thêm vào giỏ hàng!`;
+
+      // Hiển thị modal
+      const addBookModal = new bootstrap.Modal(document.getElementById("addBookModal"));
+      addBookModal.show();
+    } else {
+      console.error("Sản phẩm không tìm thấy, id:", id);
+    }
+  });
 });
