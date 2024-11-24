@@ -32,7 +32,7 @@ function displayProducts(products) {
       <a href="../pages/chitietsp.html">
         <div class="image-hover-container">
           <img src="../assets/images/Ao/${product.url}.jpg" alt="${product.name}" class="default-image" />
-          <img src="../assets/images/Ao/${product.url}.jpg" alt="Hover Image" class="hover-image" />
+          <img src="../assets/images/Ao/${product.urlback}.jpg" alt="Hover Image" class="hover-image" />
         </div>
         <div class="card-body ms-1">
           <div class="text-start">
