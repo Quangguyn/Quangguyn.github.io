@@ -5,7 +5,7 @@ function initCart() {
   if (cartCount.innerText === "0") {
     let noti = document.createElement("h6");
     noti.innerText =
-      "Giỏ hàng của bạn trống. Quay lại trang chủ để lựa chọn sản phẩm";
+      "Giỏ hàng của bạn trống. Quay lại cửa hàng để lựa chọn sản phẩm";
     cartList.appendChild(noti);
     checkoutButton.classList.add("disabled");
   } else {
