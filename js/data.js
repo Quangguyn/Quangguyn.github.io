@@ -6,7 +6,7 @@ let Ao = [
     description: `
     `,
     rating: 5,
-    price: 499,
+    price: 120,
   },
   {
     id: 1,
@@ -15,7 +15,7 @@ let Ao = [
     description: `
     `,
     rating: 5,
-    price: 499,
+    price: 140,
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ let Ao = [
     description: `
     `,
     rating: 5,
-    price: 499,
+    price: 120,
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ let Ao = [
     description: `
     `,
     rating: 5,
-    price: 499,
+    price: 245,
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ let Ao = [
     description: `
     `,
     rating: 5,
-    price: 399,
+    price: 389,
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ let Ao = [
     description: `
     `,
     rating: 5,
-    price: 499,
+    price: 350,
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ let Ao = [
     description: `
     `,
     rating: 5,
-    price: 1399,
+    price: 800,
   },
   {
     id: 8,
@@ -78,7 +78,6 @@ let Ao = [
     description: `
     `,
     rating: 5,
-    price: 1263,
+    price: 840,
   },
-
 ];
