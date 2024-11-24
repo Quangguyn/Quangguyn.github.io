@@ -31,12 +31,18 @@ function displayProducts(products) {
     <div class="card d-block hvr-glow">
       <a href="../pages/chitietsp.html">
         <div class="image-hover-container">
-          <img src="../assets/images/Ao/${product.url}.jpg" alt="${product.name}" class="default-image" />
-          <img src="../assets/images/Ao/${product.urlback}.jpg" alt="Hover Image" class="hover-image" />
+          <img src="../assets/images/Ao/${product.url}.jpg" alt="${
+      product.name
+    }" class="default-image" />
+          <img src="../assets/images/Ao/${
+            product.urlback
+          }.jpg" alt="Hover Image" class="hover-image" />
         </div>
         <div class="card-body ms-1">
           <div class="text-start">
-            <p class="text-decoration-none text-truncate d-block fw-bold mb-2">${product.name}</p>
+            <p class="text-decoration-none text-truncate d-block fw-bold mb-2">${
+              product.name
+            }</p>
             <div class="d-flex justify-content-start small text-warning mb-2">
               ${"★".repeat(product.rating)}${"☆".repeat(5 - product.rating)}
             </div>
