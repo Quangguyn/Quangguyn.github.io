@@ -105,10 +105,14 @@ document.addEventListener("DOMContentLoaded", () => {
       handleAddBookEvent(id);
 
       // Cập nhật nội dung trong modal
-      document.getElementById("modalBody").firstElementChild.innerText = `"${product.name}" đã thêm vào giỏ hàng!`;
+      document.getElementById(
+        "modalBody"
+      ).firstElementChild.innerText = `"${product.name}"`;
 
       // Hiển thị modal
-      const addBookModal = new bootstrap.Modal(document.getElementById("addBookModal"));
+      const addBookModal = new bootstrap.Modal(
+        document.getElementById("addBookModal")
+      );
       addBookModal.show();
     } else {
       console.error("Sản phẩm không tìm thấy, id:", id);
