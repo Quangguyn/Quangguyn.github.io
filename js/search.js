@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchText = searchInput.value.trim().toLowerCase();
     if (searchText === "") {
       bookCards.forEach((card) => {
-        card.style.display = ""; // Hiển thị lại tất cả các thẻ sách
+        card.style.display = ""; // Hiển thị lại tất cả các thẻ 
       });
     }
   });
