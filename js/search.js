@@ -31,12 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchText = searchInput.value.trim().toLowerCase();
     if (searchText === "") {
       bookCards.forEach((card) => {
-        card.style.display = ""; // Hiển thị lại tất cả các thẻ 
+        card.style.display = ""; // Hiển thị lại tất cả các thẻ sách
       });
     }
   });
 });
-
 //HIỂN THỊ PHÂN TRANG
 document.addEventListener("DOMContentLoaded", function () {
   const itemsPerPage = 8; // 2 rows * 4 items per row
