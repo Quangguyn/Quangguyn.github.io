@@ -35,7 +35,7 @@ function displayProducts(products) {
       product.name
     }" class="default-image" />
           <img src="../assets/images/Ao/${
-            product.urlback
+            product.url
           }.jpg" alt="Hover Image" class="hover-image" />
         </div>
         <div class="card-body ms-1">
@@ -91,43 +91,58 @@ function updateProducts() {
 
 // Hàm lọc sản phẩm theo dải giá
 function filterProducts() {
+  const searchInput = document.getElementById("searchInput");
+  const searchText = searchInput.value.trim().toLowerCase(); // Lấy giá trị tìm kiếm
   let selectedPriceRanges = [];
+
   document.querySelectorAll(".price-filter:checked").forEach((checkbox) => {
     selectedPriceRanges.push(checkbox.value);
   });
 
-  // Nếu không có dải giá nào được chọn, hiển thị tất cả sản phẩm
-  if (selectedPriceRanges.length === 0) {
-    filteredProducts = Ao; // Hiển thị tất cả sản phẩm
-  } else {
-    // Lọc sản phẩm theo dải giá đã chọn
-    filteredProducts = Ao.filter((product) => {
-      return selectedPriceRanges.some((range) => {
+  filteredProducts = Ao.filter((product) => {
+    // Kiểm tra sản phẩm có khớp với bộ lọc giá không
+    const matchesPrice =
+      selectedPriceRanges.length === 0 ||
+      selectedPriceRanges.some((range) => {
         switch (range) {
           case "under-150":
-            return product.price < 150; // dưới 150.000₫
+            return product.price < 150;
           case "150-250":
-            return product.price >= 150 && product.price <= 250; // từ 150.000₫ đến 250.000₫
+            return product.price >= 150 && product.price <= 250;
           case "250-350":
-            return product.price >= 250 && product.price <= 350; // từ 250.000₫ đến 350.000₫
+            return product.price >= 250 && product.price <= 350;
           case "350-500":
-            return product.price >= 350 && product.price <= 500; // từ 350.000₫ đến 500.000₫
+            return product.price >= 350 && product.price <= 500;
           case "above-500":
-            return product.price > 500; // trên 500.000₫
+            return product.price > 500;
           default:
             return false;
         }
       });
-    });
-  }
+
+    // Kiểm tra sản phẩm có khớp với từ khóa tìm kiếm không
+    const matchesSearch = product.name.toLowerCase().includes(searchText);
+
+    return matchesPrice && matchesSearch; // Kết hợp cả hai điều kiện
+  });
 
   currentPage = 1; // Reset về trang đầu khi lọc lại
-  displayProducts(filteredProducts); // Hiển thị lại sản phẩm đã lọc và phân trang
+  displayProducts(filteredProducts); // Hiển thị lại sản phẩm
 }
 
 // Gọi hàm hiển thị sản phẩm khi trang được tải
 document.addEventListener("DOMContentLoaded", () => {
-  displayProducts(filteredProducts); // Hiển thị toàn bộ sản phẩm khi trang được tải
+  const searchInput = document.getElementById("searchInput");
+
+  searchInput.addEventListener("input", filterProducts); // Lọc sản phẩm khi nhập
+  searchInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      filterProducts(); // Lọc sản phẩm khi nhấn Enter
+    }
+  });
+
+  // Hiển thị sản phẩm ban đầu
+  displayProducts(filteredProducts);
 });
 
 // Gắn sự kiện cho các checkbox để lọc khi người dùng thay đổi
