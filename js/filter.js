@@ -35,7 +35,7 @@ function displayProducts(products) {
       product.name
     }" class="default-image" />
           <img src="../assets/images/Ao/${
-            product.url
+            product.urlback
           }.jpg" alt="Hover Image" class="hover-image" />
         </div>
         <div class="card-body ms-1">
