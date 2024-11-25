@@ -1,3 +1,6 @@
 # nguynquang.github.io
 
-test fork (từ nghĩa)
+Bài Tập Lớn Thiết Kế Web
+Đề Tài: Thiết Kế Website Bán Quần Áo
+
+của JO4 CNTTA
